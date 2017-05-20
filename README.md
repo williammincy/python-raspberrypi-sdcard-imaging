@@ -14,12 +14,14 @@ The requirements are very small to run this. You'll need:
   - SD card
   - 6GB free disk space
 
+It's also worth mentioning that you should be able to `sudo` since some of the commands will require this to work properly.
+
 ### Instructions
 
-Once you've cloned/downloaded the repository you'll need to also install the `pip` package
+Once you've cloned/downloaded the repository you'll need to also install the `pip` packages needed to run the script
 
 ```
-   pip install click
+   pip install click hurry.filesize
 ```
 
 At this point you should prepare your SD card that you want to use by formatting it. Once done, you can initiate the script: 
@@ -28,7 +30,7 @@ At this point you should prepare your SD card that you want to use by formatting
    python rpi-setup.py
 ```
 
-The script takes you through selecting the disk from those available and picking the RPi disk image to install. More information about the difference between the two can be found on the [Raspberry Pi website](https://www.raspberrypi.org/downloads/raspbian/). From there it will download the appropriate disk image and install it onto the SD card.
+The script takes you through selecting the disk from those available and picking the RPi disk image to install. More information about the difference between the two can be found on the [Raspberry Pi website](https://www.raspberrypi.org/downloads/raspbian/). From there it will download the appropriate disk image, format the SD card if you enabled that option, and complete the installation.
 
 After successfully installing the disk image onto the SD card the script will clean up after itself, removing the zip and disk image files from your computer.
 
