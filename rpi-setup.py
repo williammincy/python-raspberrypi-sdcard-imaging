@@ -48,7 +48,11 @@ def print_choose_disk():
         for disk in disks:
             partitionInfo = " (???)"
             if "Partitions" in disk:
-                partitionInfo = " ("+disk["Partitions"][-1]["VolumeName"]+")"
+                if "VolumeName" in disk["Partitions"][-1]:
+                    partitionInfo = " ("+disk["Partitions"][-1]["VolumeName"]+")"
+                else:
+                    if "VolumeName" in disk["Partitions"][0]:
+                        partitionInfo = " ("+disk["Partitions"][0]["VolumeName"]+")"
             actualdisks.append(disk)
             click.secho(" "+" "+str(dc)+": "+disk["DeviceIdentifier"]+" - "+size(disk["Size"])+partitionInfo, fg='green')
             dc += 1
