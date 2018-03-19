@@ -1,8 +1,8 @@
 # Python Raspberry Pi Disk Image Installer 
 
-I created this project because I have provisioned more than a SD cards for use in Raspberry Pi and wanted a simple and reliable script to do this whenever needed rather than having to look up the steps each time.
+I created this project because I have provisioned more than a few SD cards for use in a Raspberry Pi, and wanted a simple and reliable script to do this whenever needed rather than having to look up the installation steps each time.
 
-Please feel free to use this as you like, fork, or submit updates to make it better. 
+Please feel free to use this as you like, fork, or submit pull requests to make it better. 
 
 ## Requirements 
 
